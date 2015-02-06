@@ -14,7 +14,7 @@
 ActiveRecord::Schema.define(version: 20150206001412) do
 
   create_table "skills", force: :cascade do |t|
-    t.text     "skill"
+    t.string   "skill"
     t.text     "description"
     t.float    "avg"
     t.date     "acquired"

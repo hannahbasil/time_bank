@@ -16,7 +16,7 @@ class SkillsController < ApplicationController
     @skill.skill = params[:skill]
     @skill.description = params[:description]
     @skill.avg = params[:avg]
-    @skill.acquired = params[:acquired]
+    @skill.acquired = Date.strptime(params[:acquired], '%m/%d/%Y')
     @skill.special = params[:special]
     @skill.cert = params[:cert]
 

@@ -1,10 +1,10 @@
 class CreateSkills < ActiveRecord::Migration
   def change
     create_table :skills do |t|
-      t.text :skill
+      t.string :skill
       t.text :description
-      t.integer :avg
-      t.integer :acquired
+      t.float :avg
+      t.date :acquired
       t.text :special
       t.text :cert
 

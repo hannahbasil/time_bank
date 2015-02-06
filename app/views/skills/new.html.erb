@@ -25,7 +25,7 @@
               Name of Skill
             </label>
             <div class="col-sm-10">
-              <textarea id="skill" name="skill" class="form-control" rows="3"><%= @skill.skill %></textarea>
+              <input id="skill" name="skill" class="form-control" rows="3"><%= @skill.skill %></input>
             </div>
           </div>
 
@@ -52,10 +52,10 @@
           <!-- Label and input for acquired -->
           <div class="form-group">
             <label for="acquired" class="col-sm-2 control-label">
-              Practicing Since <small>(Year)</small>
+              Practicing Since
             </label>
             <div class="col-sm-10">
-              <input type="text" id="acquired" name="acquired" class="form-control" value="<%= @skill.acquired %>">
+              <input type="text" id="acquired" placeholder = "mm/dd/yyyy" name="acquired" class="form-control" value="<%= @skill.acquired %>">
             </div>
           </div>
 
