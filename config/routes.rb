@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   # Routes for the Skill resource:
+  get '/',                :controller => 'skills', :action => 'index'
   # CREATE
   get '/skills/new',      :controller => 'skills', :action => 'new',    :as => 'new_skill'
   post '/skills',         :controller => 'skills', :action => 'create', :as => 'skills'

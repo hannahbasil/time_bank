@@ -22,10 +22,10 @@
           <!-- Label and input for skill -->
           <div class="form-group">
             <label for="skill" class="col-sm-2 control-label">
-              Skill
+              Name of Skill
             </label>
             <div class="col-sm-10">
-              <textarea id="skill" name="skill" placeholder="Skill" class="form-control" rows="3"><%= @skill.skill %></textarea>
+              <textarea id="skill" name="skill" placeholder="<%= @skill.skill %>" class="form-control" rows="3"><%= @skill.skill %></textarea>
             </div>
           </div>
 
@@ -35,47 +35,47 @@
               Description
             </label>
             <div class="col-sm-10">
-              <textarea id="description" name="description" placeholder="Description" class="form-control" rows="3"><%= @skill.description %></textarea>
+              <textarea id="description" name="description" placeholder="<%= @skill.description %>" class="form-control" rows="3"><%= @skill.description %></textarea>
             </div>
           </div>
 
           <!-- Label and input for avg -->
           <div class="form-group">
             <label for="avg" class="col-sm-2 control-label">
-              Avg
+              Completion time <small>(Hours)</small>
             </label>
             <div class="col-sm-10">
-              <input type="text" id="avg" name="avg" placeholder="Avg" class="form-control" value="<%= @skill.avg %>">
+              <input type="text" id="avg" name="avg" placeholder="<%= @skill.avg %>" class="form-control" value="<%= @skill.avg %>">
             </div>
           </div>
 
           <!-- Label and input for acquired -->
           <div class="form-group">
             <label for="acquired" class="col-sm-2 control-label">
-              Acquired
+              Practicing Since <small>(Year)</small>
             </label>
             <div class="col-sm-10">
-              <input type="text" id="acquired" name="acquired" placeholder="Acquired" class="form-control" value="<%= @skill.acquired %>">
+              <input type="text" id="acquired" name="acquired" placeholder="<%= @skill.acquired %>" class="form-control" value="<%= @skill.acquired %>">
             </div>
           </div>
 
           <!-- Label and input for special -->
           <div class="form-group">
             <label for="special" class="col-sm-2 control-label">
-              Special
+              Specialties
             </label>
             <div class="col-sm-10">
-              <textarea id="special" name="special" placeholder="Special" class="form-control" rows="3"><%= @skill.special %></textarea>
+              <textarea id="special" name="special" placeholder="<%= @skill.special %>" class="form-control" rows="3"><%= @skill.special %></textarea>
             </div>
           </div>
 
           <!-- Label and input for cert -->
           <div class="form-group">
             <label for="cert" class="col-sm-2 control-label">
-              Cert
+              Extras <small>Certifications, Licenses, Credentials</small>
             </label>
             <div class="col-sm-10">
-              <textarea id="cert" name="cert" placeholder="Cert" class="form-control" rows="3"><%= @skill.cert %></textarea>
+              <textarea id="cert" name="cert" placeholder="<%= @skill.cert %>" class="form-control" rows="3"><%= @skill.cert %></textarea>
             </div>
           </div>
 
