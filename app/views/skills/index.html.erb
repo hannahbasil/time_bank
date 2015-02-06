@@ -1,10 +1,12 @@
 <div class="page-header">
+  <div class="jumbotron" background-image: url("http://s3.amazonaws.com/sitebuilderreport-assets/stock_photos/files/000/003/564/small/Life-of-Pix-free-stock-photos-workshop-manual-car-body-leeroy.jpg?1418219159")>
   <h1>
     Community Skills
     <%= link_to new_skill_url, :class => "btn btn-lg btn-success" do %>
       <i class="fa fa-plus"></i>
     <% end  %>
   </h1>
+  </div>
 </div>
 
 <!-- Responsive, Isotope-based layout example -->
@@ -22,13 +24,10 @@
   <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 isotope-item">
     <div class="panel panel-default">
       <div class="panel-heading">
-        <h3 class="panel-title"><%= skill.skill.capitalize %></h3>
+        <h3 class="panel-title"><%= skill.skill.titleize %></h3>
       </div>
       <div class="panel-body">
         <dl>
-          <dt>Name</dt>
-          <dd><%= skill.skill %></dd>
-
           <dt>Description</dt>
           <dd><%= skill.description %></dd>
 
